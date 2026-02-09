@@ -1,4 +1,4 @@
-# Cybersecurity Policy Gap Analyzer (Offline AI + NLP)
+# Cybersecurity Policy Gap Analyzer 
 
 An offline cybersecurity compliance analysis tool that evaluates organizational policy documents against security frameworks (e.g., NIST CSF) and automatically:
 
@@ -100,7 +100,7 @@ roadmap
 
 ---
 
-## Option 2 — Streamlit Dashboard (Recommended)
+## Option 2 — Streamlit Dashboard
 
 Run:
 
