@@ -53,7 +53,9 @@ def score(clause, segment):
     return 0.5 * kw + 0.5 * sim
 
 
-# ------------------------------------
+# ---------------------------------------------------------------------------
+# CLASSIFYING ON THE BASIS OF COVERAGE- 'Missing','Partial','Covered'
+# ---------------------------------------------------------------------------
 def classify(score):
 
     if score >= 0.6:
