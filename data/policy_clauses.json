@@ -1,0 +1,151 @@
+[
+  {
+    "id": "GV.PO-01",
+    "function": "Govern",
+    "category": "Policy",
+    "control": "A formal cybersecurity policy is established, documented, communicated, and enforced"
+  },
+  {
+    "id": "GV.RR-02",
+    "function": "Govern",
+    "category": "Roles and Responsibilities",
+    "control": "Roles, responsibilities, and authorities for cybersecurity are clearly defined and assigned"
+  },
+  {
+    "id": "GV.RM-01",
+    "function": "Govern",
+    "category": "Risk Management",
+    "control": "Risk management objectives and strategy are established and agreed upon"
+  },
+  {
+    "id": "GV.OV-01",
+    "function": "Govern",
+    "category": "Oversight",
+    "control": "Cybersecurity performance and risks are periodically reviewed by leadership"
+  },
+
+  {
+    "id": "ID.AM-1",
+    "function": "Identify",
+    "category": "Asset Management",
+    "control": "Inventories of hardware assets are maintained and regularly updated"
+  },
+  {
+    "id": "ID.AM-2",
+    "function": "Identify",
+    "category": "Asset Management",
+    "control": "Inventories of software, services, and systems are maintained"
+  },
+  {
+    "id": "ID.AM-5",
+    "function": "Identify",
+    "category": "Asset Management",
+    "control": "Assets are classified and prioritized based on criticality and impact"
+  },
+  {
+    "id": "ID.RA-01",
+    "function": "Identify",
+    "category": "Risk Assessment",
+    "control": "Vulnerabilities are identified, validated, and recorded"
+  },
+  {
+    "id": "ID.RA-06",
+    "function": "Identify",
+    "category": "Risk Assessment",
+    "control": "Risk responses are planned, prioritized, tracked, and communicated"
+  },
+
+  {
+    "id": "PR.AA-01",
+    "function": "Protect",
+    "category": "Access Control",
+    "control": "User identities and credentials are securely managed"
+  },
+  {
+    "id": "PR.AA-05",
+    "function": "Protect",
+    "category": "Access Control",
+    "control": "Access follows least privilege and separation of duties principles"
+  },
+  {
+    "id": "PR.AT-01",
+    "function": "Protect",
+    "category": "Training",
+    "control": "Personnel receive regular cybersecurity awareness and training"
+  },
+  {
+    "id": "PR.DS-01",
+    "function": "Protect",
+    "category": "Data Security",
+    "control": "Data at rest is protected for confidentiality, integrity, and availability"
+  },
+  {
+    "id": "PR.DS-02",
+    "function": "Protect",
+    "category": "Data Security",
+    "control": "Data in transit is protected using encryption and secure protocols"
+  },
+  {
+    "id": "PR.PS-01",
+    "function": "Protect",
+    "category": "Platform Security",
+    "control": "Configuration management practices are established and enforced"
+  },
+  {
+    "id": "PR.PS-02",
+    "function": "Protect",
+    "category": "Platform Security",
+    "control": "Systems and software are regularly updated and patched"
+  },
+
+  {
+    "id": "DE.CM-01",
+    "function": "Detect",
+    "category": "Monitoring",
+    "control": "Networks and systems are continuously monitored for suspicious activities"
+  },
+  {
+    "id": "DE.AE-02",
+    "function": "Detect",
+    "category": "Event Analysis",
+    "control": "Security events are analyzed to understand impact and scope"
+  },
+
+  {
+    "id": "RS.MA-01",
+    "function": "Respond",
+    "category": "Incident Management",
+    "control": "An incident response plan is established and executed during incidents"
+  },
+  {
+    "id": "RS.CO-02",
+    "function": "Respond",
+    "category": "Communication",
+    "control": "Stakeholders are notified and informed during cybersecurity incidents"
+  },
+  {
+    "id": "RS.MI-01",
+    "function": "Respond",
+    "category": "Mitigation",
+    "control": "Incidents are contained and eradicated promptly"
+  },
+
+  {
+    "id": "RC.RP-01",
+    "function": "Recover",
+    "category": "Recovery",
+    "control": "Recovery plans are executed to restore systems and services after incidents"
+  },
+  {
+    "id": "RC.RP-03",
+    "function": "Recover",
+    "category": "Recovery",
+    "control": "Backups are maintained and tested regularly"
+  },
+  {
+    "id": "RC.CO-03",
+    "function": "Recover",
+    "category": "Communication",
+    "control": "Recovery progress is communicated to stakeholders"
+  }
+]
