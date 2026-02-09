@@ -3,9 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-# ------------------------------------
-# keyword match
-# ------------------------------------
+
 def keyword_score(clause, segment):
 
     keywords = clause["normalized_keywords"]
@@ -22,9 +20,7 @@ def keyword_score(clause, segment):
     return matched / len(keywords)
 
 
-# ------------------------------------
-# tfidf similarity
-# ------------------------------------
+
 def tfidf_score(text1, text2):
 
     vec = TfidfVectorizer(stop_words="english")
@@ -33,15 +29,12 @@ def tfidf_score(text1, text2):
     return cosine_similarity(tfidf[0], tfidf[1])[0][0]
 
 
-# ------------------------------------
-# FINAL score logic (important)
-# ------------------------------------
+
 def score(clause, segment):
 
     kw = keyword_score(clause, segment)
 
-    # ⭐ KEY FIX
-    # strong keyword match = covered immediately
+
     if kw >= 0.5:
         return 0.8
 
@@ -53,9 +46,7 @@ def score(clause, segment):
     return 0.5 * kw + 0.5 * sim
 
 
-# ---------------------------------------------------------------------------
-# CLASSIFYING ON THE BASIS OF COVERAGE- 'Missing','Partial','Covered'
-# ---------------------------------------------------------------------------
+
 def classify(score):
 
     if score >= 0.6:
