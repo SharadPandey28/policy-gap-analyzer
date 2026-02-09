@@ -8,7 +8,7 @@ from app.service import analyze_policy
 
 
 # ======================================================
-# PAGE CONFIG
+# PAGE CONfIG
 # ======================================================
 st.set_page_config(
     page_title="Cybersecurity Policy Gap Analyzer",
@@ -23,17 +23,17 @@ st.caption("Offline AI + NLP powered compliance dashboard (Ollama local)")
 # SIDEBAR
 # ======================================================
 st.sidebar.header("Settings")
-
+# FRAMEWORK
 framework = st.sidebar.selectbox(
     "Framework",
     ["NIST CSF", "CIS Controls v8"]
 )
-
+# ANALYSIS
 analysis_mode = st.sidebar.radio(
     "Analysis Mode",
     ["Quick", "Standard", "Deep"]
 )
-
+# RISK LEVEL
 risk_level = st.sidebar.slider(
     "Detection Strictness",
     1, 5, 3
@@ -53,7 +53,7 @@ uploaded_file = st.file_uploader(
     type=["pdf", "txt"]
 )
 
-analyze_btn = st.button("🚀 Analyze Policy")
+analyze_btn = st.button("Analyze Policy")
 
 
 # ======================================================
@@ -67,7 +67,6 @@ if analyze_btn:
 
     with st.spinner("Running offline NLP + Ollama analysis..."):
 
-        # ⭐ FIXED: preserve extension
         suffix = "." + uploaded_file.name.split(".")[-1]
 
         tmp = tempfile.NamedTemporaryFile(delete=False, suffix=suffix)
